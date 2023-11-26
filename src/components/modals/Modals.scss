@@ -6,6 +6,7 @@
   left: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
+  overflow-y: auto;
 }
 
 .modal_wrapper {
@@ -65,7 +66,7 @@
     text-align: center;
 
     @media screen and (max-width: 980px) {
-      font-size: 24px;
+      font-size: 20px;
     }
   }
 

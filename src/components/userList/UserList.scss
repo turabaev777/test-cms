@@ -8,6 +8,7 @@
   @media screen and (max-width: 980px) {
     padding-top: 30px;
     border-radius: unset;
+    height: auto;
   }
 }
 
@@ -57,6 +58,10 @@
 .list_wrapper {
   height: calc(100% - 70px);
   overflow-y: auto;
+
+  @media screen and (max-width: 980px) {
+    height: 450px;
+  }
 
   &::-webkit-scrollbar {
     width: 7px;
