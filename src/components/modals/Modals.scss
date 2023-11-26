@@ -1,0 +1,236 @@
+.modal_overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.modal_wrapper {
+  border-radius: 15px;
+  background: #F9FAFB;
+  box-shadow: -30px 30px 50px 0px rgba(28, 28, 30, 0.10);
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  right: 0;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+
+  p {
+    color: #424F5E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 111.111% */
+    cursor: pointer;
+    white-space: nowrap;
+
+    &:hover {
+      color: #9494A0;
+    }
+  }
+}
+
+.modal_invite_wrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  background: #F9FAFB;
+  box-shadow: -30px 30px 50px 0px rgba(28, 28, 30, 0.10);
+  width: 526px;
+  padding: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  @media screen and (max-width: 980px) {
+    width: 90%;
+    padding: 20px;
+  }
+
+  & > p {
+    color: #424F5E;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px; /* 129.412% */
+    white-space: nowrap;
+    margin-bottom: 17px;
+    text-align: center;
+
+    @media screen and (max-width: 980px) {
+      font-size: 24px;
+    }
+  }
+
+  form {
+
+    p {
+      display: flex;
+      align-items: center;
+      border-radius: 15px;
+      border: 1px solid #C1C1CB;
+      padding: 20px;
+      width: 100%;
+      color: #9494A0;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px; /* 100% */
+      overflow-x: auto;
+
+      &::-webkit-scrollbar {
+        height: 7px;
+        background-color: #EFEFF6;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #cdcdcd;
+        border-radius: 21px;
+      }
+
+      span {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  input[type="email"], input[type="text"] {
+    width: 100%;
+    height: 61px;
+    border-radius: 15px;
+    border: 1px solid #C1C1CB;
+    color: #9494A0;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 100% */
+    padding: 20px;
+    margin-bottom: 8px;
+  }
+
+  button {
+    width: 100%;
+    height: 61px;
+    border-radius: 15px;
+    background: #32C076;
+    color: #F9FAFB;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 20px; /* 100% */
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.modal_close {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 26px;
+  background-image: url("../../../public/images/modal_close.svg");
+  background-color: #EBEBF0;
+  border-radius: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 980px) {
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    top: 30px;
+  }
+}
+
+.modal_toast_wrapper {
+  width: 526px;
+  height: 213px;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  background: #F9FAFB;
+  box-shadow: -30px 30px 50px 0px rgba(28, 28, 30, 0.10);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 980px) {
+    width: 90%;
+  }
+
+  p {
+    color: #424F5E;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 26.4px */
+    margin-bottom: 17px;
+    width: 75%;
+  }
+}
+
+.modal_close_btn {
+  border-radius: 15px;
+  background: #32C076;
+  width: 404px;
+  height: 61px;
+  color: #F9FAFB;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 20px; /* 100% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  @media screen and (max-width: 980px) {
+    width: 90%;
+  }
+}
+
+.modal_permissions_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: absolute;
+  padding: 20px;
+  border-radius: 15px;
+  background: #F9FAFB;
+  box-shadow: -30px 30px 50px 0px rgba(28, 28, 30, 0.10);
+
+  label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #424F5E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+  }
+
+  input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+  }
+}

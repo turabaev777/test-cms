@@ -1,0 +1,145 @@
+.user_list {
+  width: 100%;
+  height: 589px;
+  border-radius: 15px;
+  background: #F9FAFB;
+  position: relative;
+
+  @media screen and (max-width: 980px) {
+    padding-top: 30px;
+    border-radius: unset;
+  }
+}
+
+.list_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 29px;
+  height: 73px;
+  border-bottom: 1px solid #C1C1CB;
+
+  @media screen and (max-width: 980px) {
+    flex-direction: column;
+    height: auto;
+    padding: 0px 15px;
+    padding-bottom: 15px;
+    align-items: flex-start;
+  }
+
+  p {
+    color: #424F5E;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px; /* 169.231% */
+  }
+}
+
+.list_header_flex {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.mobile_hamburger {
+  width: 20px;
+  height: 14px;
+  cursor: pointer;
+  background-image: url("../../../public/images/hamburger.svg");
+  display: none;
+
+  @media screen and (max-width: 980px) {
+    display: flex;
+  }
+}
+
+.list_wrapper {
+  height: calc(100% - 70px);
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 7px;
+    background-color: #EFEFF6;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #cdcdcd;
+    border-radius: 21px;
+  }
+}
+
+.header_actions {
+  display: flex;
+  gap: 10px;
+  width: 90%;
+  justify-content: flex-end;
+
+  @media screen and (max-width: 980px) {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .header_search {
+    width: 70%;
+    height: 36px;
+    position: relative;
+
+    @media screen and (max-width: 980px) {
+      width: 100%;
+    }
+
+    input {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      border: 1px solid #C1C1CB;
+      padding-left: 13px;
+      color: #9494A0;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px; /* 111.111% */
+
+      @media screen and (max-width: 980px) {
+        display: block !important;
+      }
+    }
+
+    button {
+      width: 16px;
+      height: 16px;
+      background-image: url("../../../public/images/search.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: unset;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+  }
+
+  p {
+    cursor: pointer;
+    text-decoration: none;
+    width: 218px;
+    height: 36px;
+    border-radius: 10px;
+    background: #32C076;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F9FAFB;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 20px; /* 111.111% */
+
+    @media screen and (max-width: 980px) {
+      width: 100%;
+      height: 30px;
+    }
+  }
+}

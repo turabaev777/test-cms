@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex: 1 1 0%;
+}
+
+.user_wrapper {
+  flex: 1 1 0%;
+  padding-top: 53px;
+  padding-right: 105px;
+  padding-left: 105px;
+
+  @media screen and (max-width: 980px) {
+    padding: 0px;
+    height: 100%;
+  }
+}
